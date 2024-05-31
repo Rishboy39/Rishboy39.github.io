@@ -1,0 +1,483 @@
+
+
+
+/**img{
+position: fixed;
+ width: 1300px;
+ z-index: -10;
+ opacity: 1;
+}
+
+html{
+  scroll-behavior: smooth;
+    zoom: 100%;
+   
+    -moz-transform: scale(1.0);
+    -moz-transform-origin: top;
+
+}
+::-webkit-scrollbar{
+  width: 6px;
+  
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(196, 194, 194);
+  border-radius: 7px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(168, 167, 167);
+  border-radius: 7px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);  Semi-transparent white background 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above other content 
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #333; /* Dark gray border 
+  border-top: 4px solid #fff;  White top border to create spinning effect 
+  animation: spin 1s linear infinite; /* Spin animation 
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+  .back {
+    width: 1300px; /* Adjust the width as needed 
+    height: 700px; /* Adjust the height as needed 
+    position: absolute;
+    z-index: -1;
+    background-color: #A7A598;
+  }
+  .back p{
+    position: relative;
+    top: 520px;
+    left: 309px;
+    z-index: 2px;
+    font-family: "Shippori Antique B1", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 3rem;
+    color: #000000;
+
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+  }
+  body, ul {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation bar 
+nav {
+  
+ z-index: 5px;
+  
+}
+
+/* Style the list items 
+nav ul {
+  overflow: hidden; /* Hide overflowing content 
+}
+
+nav ul li {
+  float: left; /* Float list items side by side 
+  
+}
+
+/* Style the links 
+nav ul li a {
+  display: block; /* Display links as block elements 
+  color: rgb(0, 0, 0); /* Text color 
+  text-decoration: none; /* Remove underline from links 
+  padding: 9px 12px; /* Add padding 
+  margin-top: 3px;
+  margin-left:2px ;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:2rem;
+  z-index: 2;
+}
+
+/* Change link color on hover 
+nav ul li a:hover {
+  background-color: #e5e5e5; /* Darker background color 
+  border-radius: 50px;
+  transition: background-color 0.5s ease-in-out;
+
+}
+
+    
+  .main{
+
+    color: rgb(0, 0, 0); 
+    text-align: center;
+  }
+  .typing-text {
+    position: relative  ;  
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px; 
+    color: rgb(0, 0, 0);
+    text-align: center;
+    top: -80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+
+  }
+.nav_logo{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  z-index: 100;
+  font-size: .7rem;
+  top: -10px;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom:.2px;
+}
+.information {
+  
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.content img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 0; /* Remove default margin 
+  padding: 50px 350px;
+  
+}
+
+.content h1 {
+  flex: 1; /* Allow content to grow to fill available space 
+  font-size: 100px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 580px;
+  right: 505px;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.description {
+  flex: 3; /* Allow content to grow to fill available space 
+  font-size: 21px;
+  line-height: 1.3;
+  margin-top: 40px;
+  border-radius: 20px;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: oblique;
+
+  display: center;
+  padding: 15px;
+  -webkit-background-clip: text;
+  -moz-background-clip:text;
+  /*-webkit-text-fill-color: transparent;
+  -moz-text-fill-color:transparent;
+  color: black;
+}
+.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+
+}
+.portfolio{ 
+  padding: 0px;
+  width: 370px;
+  margin-top: 200px;
+  display: flex;
+  
+
+}
+.portfolio h1 {
+  margin-top: 10px;
+
+  font-size: 100px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 1170px;
+  right: 490px;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.graphic {
+  position: absolute;
+  width: 437px;
+  
+  left: 520px;
+  bottom:23px;
+
+}
+.slide2{
+  position: absolute;
+  left: 200px;
+  top: -330px;
+  
+
+}
+*/
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Set up basic styles for the navigation */
+nav {
+  position: fixed; /* Fix the navigation bar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #A7A598; /* Background color for the navigation */
+  z-index: 100; /* Ensure the navigation is above other content */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block; /* Display list items horizontally */
+}
+
+nav ul li a {
+  display: block;  
+  color: rgb(0, 0, 0); 
+  text-decoration: none; 
+  padding: 9px 12px; 
+  margin-top: 3px;
+  margin-left:2px ;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:2rem;
+  z-index: 2;
+}
+
+nav ul li a:hover {
+  background-color: #e5e5e5; /* Background color on hover */
+  border-radius: 50px;
+}
+
+/* Set up styles for the main content */
+.content {
+  margin-top: 60px; /* Adjust margin to push content below the fixed navigation */
+  padding: 20px;
+}
+.content h1 {
+  font-size: 100px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 580px;
+  right: 505px;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content img {
+  display: block; /* Ensure images are displayed as blocks */
+  margin: 0 auto; /* Center align images */
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional styling for other elements */
+.typing-text {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+
+.portfolio {
+  margin-top: 40px; /* Adjust margin as needed */
+  display: flex;
+  justify-content: center;
+}
+
+.graphic {
+  width: 100%; /* Make sure the graphic fills its container */
+
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.slide2 {
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+/* Styles for the background */
+.back {
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  background-color: #A7A598;
+  position: absolute;
+  z-index: -1;
+}
+
+.back p {
+  position: absolute;
+  top: 83%; /* Adjust positioning */
+  left: 50%; /* Adjust positioning */
+  transform: translate(-50%, -50%); /* Center the text */
+  font-family: "Shippori Antique B1", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 3rem;
+  color: #000000;
+}
+
+/* Styles for the loading spinner */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #333;
+  border-top: 4px solid #fff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.information {
+  
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+ 
+}
+.information h1{
+  position: absolute;
+  top: 30px;
+}
+
+.content img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 0; 
+  padding: 50px 350px;
+  
+}
+
+.content h1 {
+  font-size: 100px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 580px;
+  right: 505px;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.description {
+  font-size: 21px;
+  line-height: 1.3;
+  margin-top: 40px;
+  border-radius: 20px;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: oblique;
+  display: center;
+  padding: 15px;
+
+}
+
+
+.portfolio h1 {
+  margin-top: 20px;
+  padding: -600px 20px;
+  font-size: 100px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 1200px;
+  right: 490px;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
